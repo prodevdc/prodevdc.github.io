@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+.behind {
+    z-index: -2;
+}
+
+.content {
+    width: 85%;
+}
+
+ul.menubar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.menubar li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 2%;
+}
+ 
+ul.menubar li a.active {
+    background-color: #777;
+    color: white;
+}
+
+ul.menubar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    position: absolute;
+    margin-left: 15%;
+    padding: 1px 16px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.menubar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.menubar li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0; width: 100%;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.menubar li a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.page-title {
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+    font-size: 38px;
+}
+
+.card {
+    color: #000;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+}
+
+.textground {
+    background-color: #000;
+    z-index: 1;
+    padding: 10px;
+}
