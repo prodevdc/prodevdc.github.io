@@ -106,4 +106,6 @@ iframe {
 
 iframe {
     overflow: auto;
+    height: 550px;
+    width: 100%;
 }
