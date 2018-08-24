@@ -110,5 +110,7 @@ $(document).ready(() => {
         "retina_detect": true
     };
     particlesJS("particles-js",particles);
-    requestAnimationFrame();
+    $(".active").click(evt => {
+        evt.preventDefault();
+    });
 });
