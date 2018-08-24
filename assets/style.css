@@ -99,9 +99,10 @@ iframe {
 }
 
 .textground {
-    background-color: #2C2F33;
+    background-color: #23272A;
     z-index: 1;
     padding: 10px;
+    border-radius: 2px;
 }
 
 iframe {
