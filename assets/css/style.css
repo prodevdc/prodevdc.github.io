@@ -4,6 +4,7 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #particles-js {
@@ -82,6 +83,13 @@ div.content {
     }
 }
 
+@media screen and (max-width: 256px) {
+    .botIcon {
+        max-height: 128px;
+        max-width: 128px;
+    }
+}
+
 .page-title {
     padding: 8px 16px;
     display: block;
@@ -101,12 +109,53 @@ iframe {
 .textground {
     background-color: #0f0f0f;
     z-index: 1;
-    padding: 10px;
     border-radius: 2px;
 }
 
-iframe {
+widgetbot {
     overflow: auto;
     height: 550px;
     width: 100%;
+}
+
+.botIcon {
+    border-radius: 100%;
+    max-height: 256px;
+    max-width: 256px;
+    text-align: center;
+    display: inline;
+}
+
+#bots div {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.cont {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    max-width: 1000px;
+}
+
+p.article {
+    display: inline;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+widgetbot > div {
+    text-align: center;
+}
+
+widgetbot > div > .noconnection {
+    text-align: left;
+    display: inline-block;
 }
