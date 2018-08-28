@@ -113,7 +113,6 @@ iframe {
 }
 
 widgetbot {
-    overflow: auto;
     height: 550px;
     width: 100%;
 }
@@ -157,5 +156,5 @@ widgetbot > div {
 
 widgetbot > div > .noconnection {
     text-align: left;
-    display: inline-block;
+    display: none/*inline-block*/;
 }
