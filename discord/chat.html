@@ -23,6 +23,7 @@
                     <li><a href="/"><i class="fal fa-home"></i> home</a></li>
                     <li><a href="/about"><i class="fal fa-question-circle"></i> about</a></li>
                     <li><a class="active" href="/discord/chat"><i class="fal fa-comments"></i> discord</a></li>
+										<li><a href="/discord/mod-helper"><i class="fab fa-wpforms"></i> mod-helper form</a></li>
                     <li><a href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
                 </ul>
             </div>
@@ -55,12 +56,12 @@
             </div>
         </div>
         <script>
-            $(document).load(() => {
-                const embed = document.getElementById('embed');
-                embed.on('signIn', data => {
-                    console.log(`Guest signed in as ${data.name}`);
-                    //embed.emit('sendMessage', 'Hello world')
-                })
+            const embed = document.getElementById('embed');
+            embed.on('signIn', data => {
+                console.log(`Signed in as ${data.name}`);
+            });
+            embed.on('sendMessage', data => {
+                console.log(data.message.content);
             });
         </script>
     </body>
