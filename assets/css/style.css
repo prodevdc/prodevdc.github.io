@@ -103,7 +103,6 @@ div.content {
 
 iframe {
     border: 0;
-    width: 100%;
 }
 
 .textground {
@@ -148,6 +147,10 @@ p.article {
 
 .right {
     float: right;
+}
+
+.center {
+    text-align: center;
 }
 
 widgetbot > div {
