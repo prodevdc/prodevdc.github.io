@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Programmers dev; - bots</title>
+        <title>Programmers dev; source</title>
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
         <link rel="stylesheet" href="/assets/css/fa.css" />
@@ -23,27 +23,26 @@
                     <li><a href="/about"><i class="fal fa-question-circle"></i> about</a></li>
                     <li><a href="/discord/chat"><i class="fal fa-comments"></i> discord</a></li>
 										<li><a href="/discord/mod-helper"><i class="fab fa-wpforms"></i> form</a></li>
-                    <li><a class="active" href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
-										<li><a href="/source"><i class="fal fa-file-code"></i> source</a></li>
+                    <li><a href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
+										<li><a class="active" href="/source"><i class="fal fa-file-code"></i> source</a></li>
                 </ul>
             </div>
             <div class="row">
                 <div class="content">
-                    <p class="page-title behind">Discord bots</p>
+                    <p class="page-title behind">Source</p>
                     <div class="row">
                         <div class="container cont">
-                            <div class="row" id="bots"></div>
+                            <div class="textground col-xs-12">
+                                <div id="repo textground"><p>Coming soon...</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            $(document).ready(() => {
-                ["astralir","bonebot","widgetbot","mee6"].forEach(n => {
-                    $("#bots").append(`<div class="col-xs-12 col-sm-6 col-md-4"><a href="/discord/bots/${n}"><img class="botIcon" src="/assets/bots/${n}.png" /></a></div>`);
-                });
-            });
-        </script>
+				<!-- script src="/assets/js/repojs/repo.min.js"></script>
+				<script>
+				    $("#repo").repo({ user:"prodevdc", name:"prodevdc.github.io" });
+				</script -->
     </body>
 </html>
