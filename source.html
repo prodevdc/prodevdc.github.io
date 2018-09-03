@@ -31,20 +31,20 @@
                 <div class="content">
                     <p class="page-title behind">Source</p>
                     <div class="row">
-                        <div class="container cont">
+                        <div class="container cont center">
                             <div class="textground col-xs-12">
-                                <div id="repo textground"><p>Coming soon...</p></div>
+                                <div id="repo"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="/assets/js/repojs/repo.js"></script>
         <script>
-            $(() => {
-                $("#repo").repo({ user:"prodevdc", name:"prodevdc.github.io" });
+            $(document).ready(() => {
+								$("#repo").repo({ user:"prodevdc", name:"prodevdc.github.io" });
             });
         </script>
     </body>

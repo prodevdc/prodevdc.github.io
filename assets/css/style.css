@@ -153,6 +153,10 @@ p.article {
     text-align: center;
 }
 
+.repo {
+    text-align: left;
+}
+
 widgetbot > div {
     text-align: center;
 }
