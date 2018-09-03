@@ -165,3 +165,7 @@ widgetbot > div > .noconnection {
     text-align: left;
     display: none/*inline-block*/;
 }
+
+.repo h1 a.active, .repo h1 a.active:active, .repo h1 a.active:visited, .repo h1 a.active:hover {
+    color: #fff !important;
+}
