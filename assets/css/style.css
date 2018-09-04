@@ -169,3 +169,7 @@ widgetbot > div > .noconnection {
 .repo h1 a.active, .repo h1 a.active:active, .repo h1 a.active:visited, .repo h1 a.active:hover {
     color: #fff !important;
 }
+
+.article-title {
+    font-size: 24px;
+}
