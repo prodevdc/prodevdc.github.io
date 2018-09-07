@@ -173,3 +173,12 @@ widgetbot > div > .noconnection {
 .article-title {
     font-size: 24px;
 }
+
+@font-face {
+    font-family: fileFont;
+    src: url(/assets/fonts/font.woff);
+    src: url(/assets/fonts/font.woff2);
+    src: url(/assets/fonts/font.eot);
+    src: url(/assets/fonts/font.svg);
+    src: url(/assets/fonts/font.ttf);
+}
