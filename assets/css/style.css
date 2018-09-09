@@ -182,3 +182,51 @@ widgetbot > div > .noconnection {
     src: url(/assets/fonts/font.svg);
     src: url(/assets/fonts/font.ttf);
 }
+
+/* Swap */
+#swap {
+    color: hsla(0,0%,100%,.6);
+    display: flow-root;
+    padding: 0;
+    border-radius: 2px;
+}
+:not(.textground) #swap {
+    background-color: #36393f;
+}
+#swap #swap-content {
+    border: 1px solid rgba(46,48,54,.6);
+    border-radius: 2px;
+    background-color: rgba(46,48,54,.3);
+    padding: 10px;
+}
+#swap #swap-content #swap-footer {
+    font-size: 0.8rem;
+}
+#swap #swap-content #swap-buttons {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.75rem;
+}
+#swap #swap-content #swap-buttons .btn {
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(38, 114, 230);
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+#swap #swap-content #swap-buttons .btn:last-child {
+    float: right;
+    color: rgb(212, 35, 35) !important;
+}
+#swap #swap-content #swap-buttons .btn:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(38, 114, 230);
+    border-style: outset;
+}
+#swap #swap-content #swap-buttons .btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(38, 114, 230);
+    border-style: outset;
+}
