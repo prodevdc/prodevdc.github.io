@@ -189,9 +189,7 @@ widgetbot > div > .noconnection {
     display: flow-root;
     padding: 0;
     border-radius: 2px;
-}
-:not(.textground) #swap {
-    background-color: #36393f;
+    background-color: #0f0f0f;
 }
 #swap #swap-content {
     border: 1px solid rgba(46,48,54,.6);
