@@ -73,57 +73,14 @@
                 </div>
             </div>
         </div>
-        <style>
-            #swap {
-                background-color: #36393f;
-                color: hsla(0,0%,100%,.6);
-                display: flow-root;
-                padding: 0;
-                border-radius: 2px;
-            }
-            #swap #swap-content {
-                border: 1px solid rgba(46,48,54,.6);
-                border-radius: 2px;
-                background-color: rgba(46,48,54,.3);
-                padding: 10px;
-            }
-            #swap #swap-content #swap-footer {
-                font-size: 0.8rem;
-            }
-            #swap #swap-content #swap-buttons {
-                padding: 1rem;
-                font-size: 0.75rem;
-            }
-            #swap #swap-content #swap-buttons .btn {
-                margin-right: 1rem;
-                background-color: rgba(0, 0, 0, 0);
-                color: rgb(38, 114, 230);
-                border: 0;
-                cursor: pointer;
-                outline: none;
-                box-shadow: none;
-            }
-            #swap #swap-content #swap-buttons .btn:last-child {
-                float: right;
-                color: rgb(212, 35, 35) !important;
-            }
-            #swap #swap-content #swap-buttons .btn:active {
-                background-color: rgba(0, 0, 0, 0);
-                color: rgb(38, 114, 230);
-                border-style: outset;
-            }
-            #swap #swap-content #swap-buttons .btn:hover {
-                background-color: rgba(0, 0, 0, 0);
-                color: rgb(38, 114, 230);
-                border-style: outset;
-            }
-        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" />
         <script>
             const pages = {
-                1: {title: "for everyone", msg:"<li>1. b!help [command]: Shows a general help message or gives specific help for a command.</li><li>2. b!profile [member] or b!profile &lt;set / get&gt; &lt;what&gt; [new &lt;what&gt; or member]: Shows someones profile, or edit your profile.</li><li>3. b!ping: ping the bot</li><li>4. b!ipinfo &lt;ip&gt;: Shows information about an IP</li><li>5. b!website: Returns URL for website</li><li>6. b!self-role &lt;join / leave&gt; &lt;role name (no @role)&gt;: Give yourself a role</li><li>7. b!prefix: Get prefix of bot, don't use b!prefix, but [mention]prefix</li>"},
-                2: {title: "for mods", msg:"<li>1. b!kick &lt;member&gt; [reason]: kick someone with or without reason</li><li>2. b!kpk &lt;member&gt;: Keep Points Kick, by kpk-ing someone, they can join back and play further with the bones and level they had before.</li><li>3. b!say [channel] &lt;message&gt;: Let the bot say something in the current channel, or in the specified channel</li><li>4. b!config &lt;field&gt; [params]: Get or set a field of the config</li><li>5. b!textevent {&lt;prize&gt;} <text>: Start a text event</li>"},
-                3: {title: "for everyone (economy)", msg:"<li>1. b!bones [member]: See your or others bones</li>"},
-                4: {title: "for mods (economy)", msg:"<li>1. b!addbones &lt;amount&gt; [member]: Add bones to someone</li><li>2. b!addlevels &lt;amount&gt; [member]: Add levels to someone</li>"},
+                1: {title: "for everyone", msg:"<li>1. b!help [command]: Shows a general help message or gives specific help for a command</li><li>2. b!profile [member] or b!profile &lt;set / get&gt; &lt;what&gt; [new &lt;what&gt; or member]: Shows someones profile, or edit your profile</li><li>3. b!ping: ping the bot</li><li>4. b!ipinfo &lt;ip&gt;: Shows information about an IP</li><li>5. b!website: Returns URL for website</li><li>6. b!self-role &lt;join / leave&gt; &lt;role name (no @role)&gt;: Give yourself a role</li><li>7. b!prefix: Get prefix of bot, don't use b!prefix, but [mention]prefix</li>"},
+                2: {title: "for mods", msg:"<li>1. b!kick &lt;member&gt; [reason]: kick someone with or without reason</li><li>2. b!kpk &lt;member&gt;: Keep Points Kick, by kpk-ing someone, they can join back and play further with the bones and level they had before</li><li>3. b!say [channel] &lt;message&gt;: Let the bot say something in the current channel, or in the specified channel</li><li>4. b!config &lt;field&gt; [params]: Get or set a field of the config</li><li>5. b!textevent {&lt;prize&gt;} <text>: Start a text event</li>"},
+                3: {title: "for everyone (economy)", msg:"<li>1. b!bones [member]: See your or others bones</li><li>2. b!shop: Opens the shop</li><li>3. b!buy [amount] &lt;product&gt;: Buy something, amount is standard 1</li><li>4. b!sell [amount] &lt;product&gt;: Sell something, amount is standard 1</li><li>5. b!inventory [member]: See your or someone else's inventory</li>"},
+                4: {title: "for mods (economy)", msg:"<li>1. b!addbones &lt;amount&gt; [member]: Add bones to someone</li><li>2. b!addlevels &lt;amount&gt; [member]: Add levels to someone</li><li>3. b!changeinventory [member] <add[:amount] / rem[:amount] / ch> &lt;item name&gt; [(new) value]: Change someone's inventory by adding an item, removing an item or changing an item (for adding and removing you could use add:amount or rem:amount, without doing that the amount will be one)</li><li>4. b!changeshop &lt;add / rem / ch&gt; &lt;params&gt;: Change the shop</li>"},
                 5: {title: "for ops", msg:"<li>1. &gt;eval [expression]: Evaluate [expression]</li><li>2. &gt;restart: Restart the bot</li><li>3. &gt;ip: Shows ip of host computer</li><li>4. &gt;log [&lt;status&gt; &lt;text&gt;]: Log something</li><li>5. &gt;cmd &lt;command&gt;: Executes something from command line</li>"}
             };
             var curpage = 1;
