@@ -4,8 +4,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Programmers dev; - bots</title>
-        <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+        <title>zapier</title>
+        <link rel="icon" type="image/png" href="/assets/bots/zapier.png" />
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
@@ -31,27 +31,25 @@
                     <li><a href="/about"><i class="fal fa-question-circle"></i> about</a></li>
                     <li><a href="/discord/chat"><i class="fal fa-comments"></i> discord</a></li>
                     <li><a href="/discord/mod-helper"><i class="fab fa-wpforms"></i> form</a></li>
-                    <li><a class="active" href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
+                    <li><a href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
                     <li><a href="/source"><i class="fal fa-file-code"></i> source</a></li>
                 </ul>
             </div>
             <div class="row">
                 <div class="content">
-                    <p class="page-title behind">Discord bots</p>
+                    <p class="page-title behind">Zapier</p>
                     <div class="row">
                         <div class="container cont">
-                            <div class="row" id="bots"></div>
+                            <div class="textground">
+                                <img src="/assets/bots/zapier.png" class="left botIcon" />
+                                <p class="article">
+                                    <b class="article-title">Zapier</b><br />Zapier sends a message in #general when someone filled in the mod-helper form
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            $(document).ready(() => {
-                ["astralir","bonebot","widgetbot","mee6","discordserverlist","zapier"].forEach(n => {
-                    $("#bots").append(`<div class="col-xs-12 col-sm-6 col-md-4"><a href="/discord/bots/${n}"><img class="botIcon" src="/assets/bots/${n}.png" alt="${n} icon" /></a></div>`);
-                });
-            });
-        </script>
     </body>
 </html>
