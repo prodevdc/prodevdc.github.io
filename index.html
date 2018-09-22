@@ -13,35 +13,30 @@
         <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
+        <link rel="stylesheet" href="https://usec ggfcbfdcbfgfdgffd.fontawesome.com/releases/v5.2.0/css/all.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
         <script src="/assets/js/jquery.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
         <script src="/assets/js/particles.min.js"></script>
         <script src="/assets/js/perfect-scrollbar.jquery.min.js"></script>
         <script src="/assets/js/script.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125728276-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-125728276-1');
-        </script>
+				<div id="particles-js"></div>
     </head>
     <body>
-        <div class="container-fluid is-flex" id="particles-js">
+        <div class="container-fluid is-flex">
             <div class="row">
-                <ul class="menubar">
-                    <li><a class="active" href="/"><i class="fal fa-home"></i> home</a></li>
-                    <li><a href="/about"><i class="fal fa-question-circle"></i> about</a></li>
-                    <li><a href="/discord/chat"><i class="fal fa-comments"></i> discord</a></li>
-                    <li><a href="/discord/mod-helper"><i class="fab fa-wpforms"></i> form</a></li>
-                    <li><a href="/discord/bots"><i class="fal fa-robot"></i> bots</a></li>
-                    <li><a href="/source"><i class="fal fa-file-code"></i> source</a></li>
+                <ul class="menubar" id="menubar">
+                    <li><a class="active" href="/"><i class="fal fa-home"></i><b class="text"> home</b></a></li>
+                    <li><a href="/about"><i class="fal fa-question-circle"></i><b class="text"> about</b></a></li>
+                    <li><a href="/discord/chat"><i class="fal fa-comments"></i><b class="text"> discord</b></a></li>
+                    <li><a href="/discord/mod-helper"><i class="fab fa-wpforms"></i><b class="text"> form</b></a></li>
+                    <li><a href="/discord/bots"><i class="fal fa-robot"></i><b class="text"> bots</a></b></li>
+                    <li><a href="/source"><i class="fal fa-file-code"></i><b class="text"> source</a></b></li>
+                    <li class="control"><a href="javascript:void(0);" id="switchMenubar"><i class="fas fa-angle-double-down"></i></a></li>
                 </ul>
             </div>
             <div class="row">
-                <div class="content">
+                <div class="content" id="content">
                     <p class="page-title behind">Programmers dev;</p>
                     <div class="row">
                         <div class="container cont">
