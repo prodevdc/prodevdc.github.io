@@ -47,12 +47,12 @@ ul.menubar li a {
     border-radius: 2%;
 }
  
-ul.menubar li a.active {
+ul.menubar li:not(.control) a.active {
     background-color: #777;
     color: white;
 }
 
-ul.menubar li a:hover:not(.active) {
+ul.menubar li:not(.control) a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
@@ -61,33 +61,6 @@ div.content {
     position: absolute;
     margin-left: 15%;
     padding: 1px 16px;
-}
-
-@media screen and (max-width: 900px) {
-    ul.menubar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    ul.menubar li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0; width: 100%;}
-}
-
-@media screen and (max-width: 400px) {
-    ul.menubar li a {
-        text-align: center;
-        float: none;
-    }
-}
-
-@media screen and (max-width: 256px) {
-    .botIcon {
-        max-height: 128px;
-        max-width: 128px;
-    }
 }
 
 .page-title {
@@ -227,4 +200,48 @@ widgetbot > div > .noconnection {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 114, 230);
     border-style: outset;
+}
+
+#menubar li .text {
+    font-weight: normal;
+}
+
+#menubar li.control {
+    display: none;
+}
+
+ul.menubar li.control a {
+    text-align: center;
+    content: "\f100";
+    font-family: fileFont;
+}
+
+@media screen and (max-width: 900px) {
+    ul.menubar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.menubar li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0; width: 100%;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.menubar li a {
+        text-align: center;
+        float: none;
+    }
+    #menubar li.control {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 256px) {
+    .botIcon {
+        max-height: 128px;
+        max-width: 128px;
+    }
 }
